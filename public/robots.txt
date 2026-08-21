@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://techsabbir4u.vercel.app/sitemap.xml
