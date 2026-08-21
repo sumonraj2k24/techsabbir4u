@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "techsabbir4u | SM SABBIR HOSSAIN - Full Stack Developer & Designer",
-  description: "Official portfolio of SM SABBIR HOSSAIN (techsabbir4u) - Senior Full Stack Web Developer, Graphics Designer, and Remote Tech Support Specialist.",
+  description:
+    "Official portfolio of SM SABBIR HOSSAIN (techsabbir4u) - Senior Full Stack Web Developer, Graphics Designer, and Remote Tech Support Specialist.",
   keywords: [
     "techsabbir4u",
     "SM SABBIR HOSSAIN",
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     "Remote Tech Support",
     "React Developer Bangladesh",
     "Next.js Developer",
-    "Freelancer Portfolio"
+    "Freelancer Portfolio",
   ],
   authors: [{ name: "SM SABBIR HOSSAIN" }],
   icons: {
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "techsabbir4u | SM SABBIR HOSSAIN",
-    description: "Full Stack Web Developer • Graphics Designer • Remote Tech Support Specialist",
+    description:
+      "Full Stack Web Developer • Graphics Designer • Remote Tech Support Specialist",
     url: "https://techsabbir4u.vercel.app",
     siteName: "techsabbir4u",
     images: [
@@ -56,7 +58,7 @@ export default function RootLayout({
     email: "sabbirrajcpsc@gmail.com",
     telephone: "+8801712631560",
     url: "https://techsabbir4u.vercel.app",
-    image: "/profile.jpg",
+    image: "https://techsabbir4u.vercel.app/profile.jpg",
     knowsAbout: [
       "Full Stack Web Development",
       "Graphics Design",
@@ -65,7 +67,7 @@ export default function RootLayout({
       "Next.js",
       "TypeScript",
       "Node.js",
-      "TailwindCSS"
+      "TailwindCSS",
     ],
   };
 
@@ -77,7 +79,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body class="bg-darkBg text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
+      {/* FIXED: Replaced lowercase 'classname' with JSX camelCase 'className' */}
+      <body className="bg-darkBg text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
         {children}
       </body>
     </html>
